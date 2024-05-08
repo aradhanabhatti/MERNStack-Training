@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="keyupandDown" placeholder="type something">
+    <script>
+        let keyupandDown=document.getElementById("keyupandDown");
+        keyupandDown.addEventListener("keydown",function(Event){
+            console.log(`key pressed: ${Event.key}`);
+        })
+        keyupandDown.addEventListener("keyup",function(Event){
+            console.log("keyup event - key released");
+        })
+    </script>
+
+    
+</body>
+</html>

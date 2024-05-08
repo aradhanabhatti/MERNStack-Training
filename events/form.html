@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="myform">
+        <label for="">USERNAME</label>
+        <input type="text" name="" id="username">
+        <br><br>
+        <label for="">PASSWORD</label>
+        <input type="password" name="" id="password">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        let myform = document.getElementById('myform');
+        myform.addEventListener("submit", function(event){
+            event.preventDefault();
+            let username=document.getElementById("username").value;
+            let password=document.getElementById("password").value;
+
+            console.log("Form submitted with username:"+username+"and the password: ");
+        })
+    </script>
+</body>
+</html>

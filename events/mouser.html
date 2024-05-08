@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mouseoutDiv" style="height: 100px; width: 200px; background-color: brown;"></div>
+    <button id="mouseUP">CLICK ME </button>
+
+    <script>
+      
+        var div = document.getElementById("mouseoutDiv");
+        mouseoutDiv.addEventListener("mouseout" , function(){
+            mouseoutDiv.style.backgroundColor = "red";
+        });
+        mouseoutDiv.addEventListener("mouseover", function()
+        {
+            mouseoutDiv.style.backgroundColor = "lightgreen";
+        })
+        
+        let mouseUP=document.getElementById("mouseUP");
+        mouseUP.addEventListener("mousedown",function(){
+            mouseUP.style.backgroundColor="lightgreen";
+        })
+        mouseUP.addEventListener("mouseup",function(){
+            mouseUP.style.backgroundColor="";
+        })
+    </script>
+</body>
+</html>
+
+<!-- Mouse Events -->
+    <!-- click onclick when mouse click on an element
+    mouseover onmouseover when the cursor of the mouse comes over the elements
+    mouseout onmouseout when the cursor pf the mouse leaves an element
+    mousedown onmousedown when the mouse button is pressed over the element
+    mouseup onmouseup when the mouse button is pressed over thd elements
+    mousemove onmousemove when the mouse movement takes place  -->
+
+    <!-- Keyboard Events -->
+        <!-- keydown & keyup onkeydown & onkeyup when the user press and then release the key -->
+
+    <!-- Form Events  -->
+    <!-- focus onfocus when the user focuses on a element 
+    submit onsubmit when the user submits the form 
+    blur onblur when the focus is away frorm a form element
+    change onchange when the user modifies or changes the value of a form element   -->
+
+    <!-- Window/Document events -->
+    <!-- Event Performed Event Handler Description 
+    load onload when the browser finishes the loading of the page 
+    unload onunload when the visitor leaves the current webpage , thd browser unloads  __
+    resize onresize when the visitor resizes the window of the browser -->

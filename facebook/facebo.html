@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .left{
+            height: 40vh;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+        }
+        .right{
+            height: 40vh;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            padding: 15px;
+        }
+
+        .left h1{
+            font-size: 50px;
+            color: blue
+        }
+
+        .left h3{
+            font-size: 25px;
+        }
+
+        .right form{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+        }
+        .right form input{
+            font-size: 16px;
+            margin: 8px;
+            height: 30px;
+        }
+         
+
+        .right a{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .right button{
+            height: 50px;
+            font-size: 20px;
+            background-color: green;
+            color:white
+        }
+
+        #login{
+            height: 35px;
+            background-color:mediumblue;
+            color: white;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <h3>Facebook helps you connect and share with the people in your life.</h3>
+
+        </div>
+
+        <div class="right">
+            <form action="">
+                <input type="text" placeholder="Email address or phone number">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Log in" id="login">
+            </form>
+            <a href="">Forgotten password?</a>
+
+            <button>Create new account</button>
+
+
+        </div>
+    </div>
+</body>
+</html>

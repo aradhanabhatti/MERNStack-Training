@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Form events  -->
+
+
+
+<!-- keyboard events 
+keydown and Keyup      onkeydown & onkeyup when the user press and then release the key -->
+
+<!-- window/Document events 
+
+Event     performed event handler desription
+load      onload     when the browser finishes the loading of the page 
+unload    onunload   when the visitor leaves the current webpage, the browser unload 
+resize    onresize   when the visitor resizes the window of the browser. -->
+
+
+<body>
+    <div id="mouseroutDiv" style="height:100px; width:200px; background-color: aqua;">
+    </div>
+    <!-- <button onclick="onclickevents()">Click</button> -->
+    <!-- <button onmouseover="onmouseoverevents()">Click</button> -->
+
+    <!-- <button mouseout="mouseOut()">Click</button> -->
+    <script>
+        // function onclickevents(){
+        //     document.write("hello this is clickable function")
+        // }
+        //  function onmouseoverevents(){
+        //     alert ("you are on the button ")
+        // }
+        var div1 = document.getElementById("mouseroutDiv");
+        mouseroutDiv.addeventListener("mouseout",function(){
+            mouseroutDiv.style.backgroundColor="red";
+
+        });
+        mouseroutDiv.addeventListener("mouseover",function(){
+            mouseroutDiv.style.backgroundColor="yellow";
+        });
+// let abc = document.getElementById("mouseroutDiv").style.backgroundColor ="red";
+// function (){}
+    </script>
+    
+</body>
+</html>

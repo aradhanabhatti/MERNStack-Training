@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eligible for vote</h1>
+    <input type="number" placeholder="Enter age" id="ageInput">
+    <button onclick="checkAge()">Check</button>
+    <p id="result"></p>
+    
+    <!-- <script src="assign.js"></script> -->
+    <script>
+        function checkAge(){
+            const age=document.getElementById("ageInput").value;
+            const votes=age>=21?"VOTE":"WAIT";
+            const resultElement=document.getElementById("result");
+            resultElement.textContent=`You are ${age} so you can have ${votes}`;
+        }
+    </script>
+    <!-- <script>
+        let a="girl , boy, men , women"
+        let result=a.slice(6,12)
+        document.write(result)
+        let str = "Hello, World!";
+        document.write(str.toUpperCase()); 
+        let str1 = "Hello, World!";
+        document.write(str1.charAt(0));
+    </script> -->
+</body>
+</html>
